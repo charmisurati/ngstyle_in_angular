@@ -1,0 +1,5 @@
+
+<ul *ngFor="let c of list">
+    <!-- <li [ngstyle]="{color:getcolor(c.country)}"></li> -->
+    <li [style.color]="getcolor(c.country)"> I am {{c.name}} and from {{c.country}}</li>
+</ul>
